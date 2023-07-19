@@ -37,7 +37,9 @@ my-app
 ├── index.html
 ├── index.jsx
 ├── webpack.config.js
-├── .gitignore
+├── src
+│   ├── App.jsx
+├── configs
+│   ├── custom-meact-preset.js
 
 ```
-
