@@ -1,5 +1,3 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
@@ -7,7 +5,7 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-  entry: "./index.jsx",
+  entry: "./example.jsx",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -39,7 +37,10 @@ const config = {
           },
         },
       },
-
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
