@@ -5,7 +5,7 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-  entry: "./src/App.jsx",
+  entry: "./index.jsx",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
