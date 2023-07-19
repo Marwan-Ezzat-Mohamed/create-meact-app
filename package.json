@@ -1,6 +1,6 @@
 {
   "name": "create-meact-app",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "a script to create meact app with webpack",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
