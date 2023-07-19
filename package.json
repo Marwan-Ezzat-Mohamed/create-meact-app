@@ -1,0 +1,36 @@
+{
+  "name": "create-meact-app",
+  "version": "1.0.2",
+  "description": "a script to create meact app with webpack",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "start": "webpack-dev-server --config webpack.config.js --open"
+  },
+  "bin": {
+    "create-meact-app": "./create-meact-app.js"
+  },
+  "keywords": [
+    "meact",
+    "create-meact-app",
+    "npm",
+    "script"
+  ],
+  "author": "Marwan-Ezzat-Mohammed",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
+    "@babel/preset-react": "^7.22.5",
+    "html-webpack-plugin": "^5.5.3",
+    "workbox-webpack-plugin": "^7.0.0",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "inquirer": "^9.2.8",
+    "shelljs": "^0.8.5"
+  }
+}
